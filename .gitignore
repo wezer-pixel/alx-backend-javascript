@@ -1,9 +1,0 @@
-/node_modules
-.gitignore
-babel.config.js
-package.json
-package-lock.json
-1-main.js
-0-main.js
-2-main.js
-3-main.js
