@@ -13,21 +13,47 @@ export class HolbertonClass {
   }
 }
 
+/**
+ * Represents a student at Holberton School.
+ * @class
+ */
 export class StudentHolberton {
+  /**
+   * Create a student.
+   * @constructor
+   * @param {string} firstName - The first name of the student.
+   * @param {string} lastName - The last name of the student.
+   * @param {HolbertonClass} holbertonClass - The Holberton class the student belongs to.
+   */
   constructor(firstName, lastName, holbertonClass) {
     this._firstName = firstName;
     this._lastName = lastName;
     this._holbertonClass = holbertonClass;
   }
 
+  /**
+   * Get the full name of the student.
+   * @readonly
+   * @returns {string} The full name of the student.
+   */
   get fullName() {
     return `${this._firstName} ${this._lastName}`;
   }
 
+  /**
+   * Get the Holberton class the student belongs to.
+   * @readonly
+   * @returns {HolbertonClass} The Holberton class the student belongs to.
+   */
   get holbertonClass() {
     return this._holbertonClass;
   }
 
+  /**
+   * Get the full description of the student.
+   * @readonly
+   * @returns {string} The full description of the student.
+   */
   get fullStudentDescription() {
     return `${this._firstName} ${this._lastName} - \
 ${this._holbertonClass.year} - ${this._holbertonClass.location}`;

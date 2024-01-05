@@ -1,9 +1,12 @@
 /**
  * Represents a Holberton Course.
  */
+/**
+ * Represents a Holberton Course.
+ */
 export default class HolbertonCourse {
   /**
-   * Creates a new @see {@link HolbertonCourse}.
+   * Creates a new HolbertonCourse.
    *
    * @param {String} name - The name of the course.
    * @param {Number} length - How long the course is (in months).
@@ -17,6 +20,8 @@ export default class HolbertonCourse {
 
   /**
    * Gets the name of this course.
+   *
+   * @returns {String} The name of the course.
    */
   get name() {
     return this._name;
@@ -24,6 +29,9 @@ export default class HolbertonCourse {
 
   /**
    * Sets the name of this course.
+   *
+   * @param {String} value - The name of the course.
+   * @throws {TypeError} If the name is not a string.
    */
   set name(value) {
     if (typeof value !== 'string') {
@@ -34,6 +42,8 @@ export default class HolbertonCourse {
 
   /**
    * Gets the length of this course (in months).
+   *
+   * @returns {Number} The length of the course.
    */
   get length() {
     return this._length;
@@ -41,6 +51,9 @@ export default class HolbertonCourse {
 
   /**
    * Sets the length of this course (in months).
+   *
+   * @param {Number} value - The length of the course.
+   * @throws {TypeError} If the length is not a number.
    */
   set length(value) {
     if (typeof value !== 'number') {
@@ -51,6 +64,8 @@ export default class HolbertonCourse {
 
   /**
    * Gets the names of students in this course.
+   *
+   * @returns {String[]} The names of students in the course.
    */
   get students() {
     return this._students;
@@ -58,6 +73,9 @@ export default class HolbertonCourse {
 
   /**
    * Sets the names of students in this course.
+   *
+   * @param {String[]} value - The names of students in the course.
+   * @throws {TypeError} If students is not an array of strings.
    */
   set students(value) {
     if (!(value instanceof Array)) {
